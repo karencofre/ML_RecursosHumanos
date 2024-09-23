@@ -49,9 +49,9 @@ Manejo de outliers:
 # Reemplazar outliers con la media
 def modificar_outliers(df,cols,indices):
   for col in cols:
-    median_value = df[col].mean()
+    media_value = df[col].mean()
     outlier_indices = indices[col]
-    df.loc[outlier_indices, col] = median_value
+    df.loc[outlier_indices, col] = media_value
   return df
 ```
 
